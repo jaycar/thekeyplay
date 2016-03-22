@@ -1,0 +1,12 @@
+{
+  "name": "thekeyplay",
+  "version": "0.0.1",
+  "description": "thekeyplay clone",
+  	"engines": {
+		"node": ">=0.6.x",
+		"npm": "1.2.x"
+	},
+	"dependencies": {
+		"express": "3.2.x"
+	}
+}
