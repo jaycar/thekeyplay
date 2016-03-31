@@ -1,0 +1,165 @@
+@font-face {
+ 	font-family: "TheKeyPlayFont";
+ 	src: url("../fonts/thekeyplay_font.woff") format("woff");
+}
+
+#forum {
+	margin: 10px 0;
+}
+
+/* the first children don't need indentation */
+#forum > #comment-panel > .comment-wrapper {
+	margin-left: 0;
+}
+
+.comment-wrapper {
+	margin-left: 20px;
+}
+
+.comment {
+	background-color: #eeeeee;
+	border: 2px solid #dddddd;
+	border-radius: 0 10px 10px 0;
+	min-height: 150px; /* TODO temp! */
+	min-width: 400px;  /* TODO temp! */
+	margin: 5px 0;
+	padding: 5px;
+}
+
+.comment blockquote {
+	border-left: 3px solid #cccccc;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.comment .username {
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.comment .image-wrapper {
+	margin-right: 10px;
+}
+
+.comment .user-avatar {
+	height: 50px;
+	width: 50px;
+	background-color: #ff6600;
+}
+
+.comment .date::before {
+	font-family: 'TheKeyPlayFont';
+	content: "\e808";
+	color: #AAAAAA;
+	padding: 0px 5px;
+}
+
+.comment .date {
+	margin-right: 10px;
+}
+
+.comment .collapse.open::before {
+	content: "\2228";
+}
+
+.comment .collapse.close::before {
+	content: ">";
+}
+
+.comment .collapse:hover {
+	cursor: pointer;
+	color: #660000;
+}
+
+.comment .body {
+	padding: 15px 0px;
+	font-family: runda, sans-serif;
+}
+
+.comment .signature {
+	font-style: italic;
+	padding-bottom: 20px;
+	font-size: 13px;
+	color: #444444;
+}
+
+.comment .footer {
+	padding: 10px 0;
+}
+
+.comment .vote-panel {
+	display: inline-block;
+}
+
+.comment .reply {
+	font-weight: bold;
+	float: right;
+	font-size: 16px;
+	color: #660000;
+	cursor: pointer;
+}
+
+.comment .reply::after {
+	content: " \00bb";
+	font-size: 22px;
+	position: relative;
+	top: 2px;
+}
+
+.vote-panel .score {
+	padding: 0 4px;
+}
+
+.vote-panel .separator {
+	margin-right: 4px;
+}
+
+.vote-panel .vote {
+	color: #dddddd;
+}
+
+.vote-panel .vote:hover {
+	cursor: pointer;
+}
+
+.vote-panel 
+
+.vote-panel .upvote:hover {
+	color: #6aa84f;
+}
+
+.vote-panel .downvote:hover {
+	color: #a41c00;
+}
+
+.vote-panel .upvote.selected {
+	color: #6aa84f;
+	cursor: auto;
+}
+
+.vote-panel .downvote.selected {
+	color: #a41c00;
+	cursor: auto;
+}
+
+.vote-panel .reset {
+	cursor: pointer;
+	margin-left: 4px;
+}
+
+#editor {
+	margin: 20px 0;
+}
+
+#editor-section {
+	margin: 20px 0;
+}
+
+#editor-label {
+	font-weight: bold;
+}
+
+#editor-label::after {
+	content: "*";
+	color: red;
+}

@@ -8,13 +8,28 @@
  	src: url("../fonts/thekeyplay_font.woff") format("woff");
  }
 
+* {
+	font-family: "TheKeyPlayFont", sans-serif;
+}
+
+button {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
 p {
 	padding: 0;
 	margin: 0;
 }
 
-* {
-	font-family: "TheKeyPlayFont", sans-serif;
+a.tkp-link {
+	color: #660000;
+	cursor: pointer;
+}
+
+a.tkp-link:hover {
+	color: white;
+	background-color: #660000;
 }
 
 body {
@@ -43,6 +58,7 @@ header {
 	height: 65px;
 	background-color: #660000;
 	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 
 header .logo-wrapper {
@@ -96,57 +112,8 @@ header .logo-wrapper {
 #center-column {
 	flex-grow: 2;
 	flex-basis: 100%;
-	height: 100px;
-}
-
-#article-panel .article {
+	min-height: 100px;
 	padding: 10px;
-}
-
-#article-panel .article::after {
-	content: " ";
-	clear: both;
-	display: block;
-}
-
-#article-panel .article .image-wrapper {
-	height: 225px;
-	width: 425px;
-	background-color: grey;
-	float: left;
-	margin: 10px;
-}
-
-#article-panel .article .details-panel {
-	float: left;
-	padding: 10px;
-	max-width: 350px;
-}
-
-#article-panel .article .article-header {
-	margin: 0 0 15px 0;
-}
-
-#article-panel .article .article-header:hover {
-	color: #660000;
-	cursor: pointer;
-}
-
-#article-panel .article .article-stats,
-#article-panel .article .article-description {
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-#article-panel .article .article-link {
-	color: #660000;
-	padding: 0 2px;
-}
-
-#article-panel .article .article-link:hover {
-	color: white;
-	background-color: #660000;
-	cursor: pointer;
 }
 
 #side-column {
@@ -155,19 +122,11 @@ header .logo-wrapper {
 }
 
 #donation-panel .donate-link {
-	color: #660000;
-	background-color: white;
 	font-weight: bold;
-	cursor: pointer;
 	display: block;
 	font-size: 14px;
 	line-height: 20px;
 	margin: 10px 0;
-}
-
-#donation-panel .donate-link:hover {
-	color: white;
-	background-color: #660000;
 }
 
 #active-discussions-panel {
@@ -196,13 +155,6 @@ header .logo-wrapper {
 
 #active-discussions-panel .discussions-link {
 	font-size: 14px;
-	color: #660000;
-}
-
-#active-discussions-panel .discussions-link:hover {
-	color: white;
-	background-color: #660000;
-	cursor: pointer;
 }
 
 #active-discussions-panel .discussion {
